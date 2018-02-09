@@ -1,0 +1,19 @@
+<div class="formulaire_spip formulaire_configurer_logos_multiples">
+
+[<p class="reponse_formulaire reponse_formulaire_ok">(#ENV*{message_ok})</p>]
+[<p class="reponse_formulaire reponse_formulaire_erreur">(#ENV*{message_erreur})</p>]
+
+
+<form action='#ENV{action}' method='post'>
+        #ACTION_FORMULAIRE{#ENV{action}}
+        <ul>
+		[(#SAISIE{textarea, types, label=<:saisies:option_datas_label:>, obligatoire=oui, explication=<:saisies:option_datas_explication:>})]
+		</ul>
+
+		<input type="hidden" name="_meta_casier" value="logos_multiples/config" />
+
+		<p class="boutons"><input type="submit" class="submit" value="<:valider:>" /></p>
+
+</form>
+
+</div>

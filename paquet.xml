@@ -1,0 +1,19 @@
+<paquet 
+	prefix="logos_multiples"
+	categorie="edition"
+	version="0.0.1"
+	etat="dev"
+	compatibilite="[3.2.0;3.2.*]"
+>
+	<nom>Logos multiples</nom>
+
+	<auteur lien="https://www.cahri.com">Julien Tessier, Agence Cahri</auteur>
+
+	<licence>GNU/GPL</licence>
+
+	<necessite nom="saisies" compatibilite="[2.21.4;]" />
+
+	<pipeline nom="recuperer_fond" inclure="logos_multiples_pipelines.php" />
+	<pipeline nom="formulaire_traiter" inclure="logos_multiples_pipelines.php" />
+
+</paquet>

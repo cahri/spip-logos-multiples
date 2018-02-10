@@ -15,9 +15,9 @@
 
 			if ($editable) {
 				$extra = '';
-				$valider = FASLE;
+				$valider = FALSE;
 				$chercher_logo = charger_fonction('chercher_logo', 'inc');
-			    foreach(_logos_multiples_types() as $type => $label) {
+			    foreach(_logos_multiples_types($objet, $id_objet) as $type => $label) {
 					$objet = objet_type($objet);
 					$primary = id_table_objet($objet);
 			    	$erreur = ''; // @todo '<span class=\'erreur_message\'></span>'
@@ -61,7 +61,7 @@
 			if (!$_FILES) {
 				$_FILES = isset($GLOBALS['HTTP_POST_FILES']) ? $GLOBALS['HTTP_POST_FILES'] : array();
 			}
-			foreach (_logos_multiples_types() as $type => $label) {
+			foreach (_logos_multiples_types($objet, $id_objet) as $type => $label) {
 				if (_request('supprimer_logo_'.$type)) {
 					logo_supprimer($objet, $id_objet, $type);
 					$res['message_ok'] = ''; // pas besoin de message : la validation est visuelle

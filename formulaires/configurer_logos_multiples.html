@@ -7,7 +7,11 @@
 <form action='#ENV{action}' method='post'>
         #ACTION_FORMULAIRE{#ENV{action}}
         <ul>
-		[(#SAISIE{textarea, types, label=<:saisies:option_datas_label:>, obligatoire=oui, explication=<:saisies:option_datas_explication:>})]
+		[(#SAISIE{textarea, types, label=<:logos_multiples:option_datas_label:>, obligatoire=oui, explication=<:logos_multiples:option_datas_explication:>})]
+		[(#SAISIE{choisir_objets, objets_autorises,
+				label=<:logos_multiples:option_objets_label:>,
+				explication=<:logos_multiples:option_objets_explication:>,
+				defaut=spip_articles})]
 		</ul>
 
 		<input type="hidden" name="_meta_casier" value="logos_multiples/config" />

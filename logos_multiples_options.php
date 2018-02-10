@@ -19,7 +19,7 @@
 			$config = explode("\r\n", $config);
 			foreach($config as $line) {
 				list($type, $label) = explode('|', $line);
-				$type = strtolower(preg_replace('/[^a-z0-0_]/', '', $type));
+				$type = strtolower(preg_replace('/[^a-z_]/', '', $type));
 				$types[$type] = $label;
 			}
 		}

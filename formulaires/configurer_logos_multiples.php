@@ -14,7 +14,7 @@ function formulaires_configurer_logos_multiples_verifier_dist(){
     $erreur = '';
     foreach($types as $type) {
     	list($cle, $valeur) = explode('|', $type);
-    	if (!preg_match('/^[a-z0-0_]+$/', $cle)) {
+    	if (!preg_match('/^[a-z_]+$/', $cle)) {
     		$erreur .= "Clé $cle invalide\r\n";
     	}
     }

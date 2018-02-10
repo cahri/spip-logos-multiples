@@ -7,7 +7,7 @@ if (!defined('_ECRIRE_INC_VERSION')) {
 }
 
 $GLOBALS[$GLOBALS['idx_lang']] = array(
-	'option_datas_explication' => 'You need to specify a choice for each row in the form of "code|label of the logo" (code can be only alphanumeric)',
+	'option_datas_explication' => 'You need to specify a choice for each row in the form of "code|label of the logo" (code can be only lower-case letters)',
 	'option_datas_label' => 'List of the available logos',
 	'option_objets_label' => 'Objects affected',
 	'option_objets_explication' => 'Enable multiple logos on the following objects:',

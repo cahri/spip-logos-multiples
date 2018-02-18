@@ -77,6 +77,7 @@
 			}
 
 			$flux['data'] = $res;
-
 		}
+
+		return $flux;
 	}

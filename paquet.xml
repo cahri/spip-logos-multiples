@@ -1,8 +1,8 @@
 <paquet 
 	prefix="logos_multiples"
 	categorie="edition"
-	version="0.0.2"
-	etat="dev"
+	version="0.0.3"
+	etat="test"
 	compatibilite="[3.2.0;3.2.*]"
 	documentation="https://contrib.spip.net/logos_multiples"
 	logo="images/logo_logos_multiples_32.png"
